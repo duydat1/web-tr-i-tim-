@@ -1,0 +1,50 @@
+/* Reset và cài đặt chung */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+  user-select: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Container toàn màn hình */
+#container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* Cho phép xoay nhẹ khi thao tác */
+  transform-origin: center center;
+  transition: transform 0.5s ease-out;
+}
+
+/* Falling item: áp dụng cho chữ, ảnh, rose, heart */
+.falling {
+  position: absolute;
+  white-space: nowrap;
+  pointer-events: none;
+  /* Kích thước chữ giảm xuống */
+  font-size: 18px;
+  color: hotpink;
+}
+
+/* Nếu falling item chứa ảnh */
+.falling img {
+  vertical-align: middle;
+  height: 150px;
+  width : auto;
+}
+
+/* Hiệu ứng cho rose (cánh hoa hồng) */
+.rose {
+  font-size: 22px;
+  color: #ff66cc;
+}
+
+/* Hiệu ứng cho heart (trái tim) */
+.heart {
+  font-size: 16px;
+  color: #ff3366;
+}
